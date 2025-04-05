@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&family=Noto+Sans+Arabic:wght@100..900&display=swap');
+
+:root {
+    --img-height: 7vw;
+    --gap2: 3vw;
+    --p2: 1.5vw;
+}
+
+
+* {
+    font-family: "Noto Naskh Arabic", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    :root {
+        --img-height: 6vw;
+        --gap2: 2vw;
+        --p2: 1vw;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    :root {
+        --img-height: 4.5vw;
+        --gap2: 1.5vw;
+        --p2: 1vw;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    :root {
+        --img-height: 1.5vw;
+        --gap2: 1vw;
+        --p2: 0.5vw;
+    }
+}
+
+img {
+    height: var(--img-height);
+    min-height: var(--img-height);
+    min-width: var(--img-height);
+}
+
+.gap2 {
+    gap: var(--gap2)
+}
+
+* {
+    font-size: var(--img-height);
+}
+
+button,
+.buttonp {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--p2);
+    border-radius: 50%;
+
+    &:hover {
+        background: rgb(243, 239, 239);
+    }
+}
+
+.recording-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pulse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.1s, opacity 0.1s;
+}
