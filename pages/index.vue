@@ -26,8 +26,8 @@
           </ul>
         </li>
       </ol>
-
       <p class="mt-[0.833vw] text-gray-600">Transcribed: "{{ transcript }}"</p>
+      {{ checkWords }}
     </section>
   </main>
   <footer class="shadow bg-white fixed bottom-0 w-full  p-[0.833vw] flex justify-between items-center gap-10">
